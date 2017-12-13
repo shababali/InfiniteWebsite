@@ -38,6 +38,27 @@
 
 </head>
 
+
+<style>
+    .embed-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        margin-bottom: 10px;
+        height: 0;
+        overflow: hidden;
+        max-width: 100%;
+    }
+
+    .embed-container iframe, .embed-container object, .embed-container embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+</style>
+
+
 <body id="page-top">
 
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
@@ -59,6 +80,11 @@
 						<span class="caret"></span></a>
 						<ul class="dropdown-menu">
 							<li><a href="#servicesModal1" class="services-link" data-toggle="modal">Forest&nbsp;Health</a></li>
+							<li><a href="#servicesModal2" class="services-link" data-toggle="modal">Vegetation&nbsp;Management</a></li>
+							<li><a href="#servicesModal3" class="services-link" data-toggle="modal">Wildlife&nbsp;Prevention</a></li>
+							<li><a href="#servicesModal4" class="services-link" data-toggle="modal">Forest&nbsp;Products</a></li>
+							<li><a href="#servicesModal5" class="services-link" data-toggle="modal">Firewood</a></li>
+							<li><a href="#servicesModal6" class="services-link" data-toggle="modal">Forest&nbsp;Residue&nbsp;Management</a></li>
 							<li><a href="#">Page 1-2</a></li>
 							<li><a href="#">Page 1-3</a></li>
 						    <li><a class="page-scroll" href="#contact">Contact</a></li>
@@ -95,7 +121,7 @@
 
 	
 	
-	<div class="canvas" style=" z-index:1; background-color: grey;">
+<div class="canvas" style=" z-index:1; background-color: grey;">
 	
 	<section id="contact" class="contact bg-primary" >
         <div class="container">
@@ -115,11 +141,11 @@
     </section>
 
 <div class="container-fluid" style="font-family: Lato font-size: 13">    
-
-    	<div class="col-md-12">
+	<div class="row">
+    	<div class="col-sm-12 col-lg-12" style="background-color:pink">
 		
-		<div class="col-md-6">
-			<div class="col-md-3">
+		<div class="col-md-4">
+			<div class="col-md-2">
 				<ul class="unstyled">
 					<li><h5 style = "text-decoration: underline;">Forest&nbsp;Services</h5><li>
 					<li><a href="#">Forest&nbsp;Health</a></li>
@@ -130,7 +156,7 @@
 				</ul>
 				
 			</div>
-			<div class="col-md-3">
+			<div class="col-md-2">
 				<ul class="unstyled">
 					<li><h5 style = "text-decoration: underline;">Applications</h5><li>
 					<li><a href="#">Product for Mac</a></li>
@@ -141,7 +167,8 @@
 			</div>
 		
 		</div>	
-		<div class="col-md-6">
+		
+		<div class="col-md-8">
 			
 			<div class="col-md-2">
 				<ul class="unstyled">
@@ -177,11 +204,26 @@
 	
 	<br/>
 	<hr/>
-</div>
+	</div> <!-- End row-->
+</div><!-- End Footer Links Section -->
+
+<div class="container">
+    <address>
+		310 SW 4th Ave #412<br />
+		Portland, OR 97204<br />
+		<abbr title="Phone">P:</abbr>
+		503.206.6915
+    </address>
+    <div class='embed-container'>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44613.57939952245!2d-118.88161905416767!3d55.18391632142435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x539096ab8533df3f%3A0xc299552ac205596b!2sInfinite+Forestry+Consulting+Ltd!5e0!3m2!1sen!2sca!4v1512151600444" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+	</div>
+</div> <!-- End container-->
+
 	
 
 <footer style="font-family:Lato; font-size:13;">
     <div class="container-fluid">	
+	
 		<div class="component" style = "float: left-side">
 			<a href="#" class="icon facebook">facebook</a>
 			<a href="#" class="icon twitter">twitter</a>
@@ -190,12 +232,19 @@
 			<a href="#" class="icon github">github</a>			
 		</div>
 		
-		<a class="btn btn-social-icon btn-linkedin">
-			<span class="fa fa-linkedin"></span></a>
 		<a class="btn btn-social-icon btn-facebook">
 			<span class="fa fa-facebook"></span></a>
+		<a class="btn btn-social-icon btn-twitter">
+			<span class="fa fa-twitter"></span></a>
+		<a class="btn btn-social-icon btn-linkedin">
+			<span class="fa fa-linkedin"></span></a>
+		<a class="btn btn-social-icon btn-google-plus">
+			<span class="fa fa-google-plus"></span></a>
+		<a class="btn btn-social-icon btn-github">
+			<span class="fa fa-github"></span></a>
 
-        <p>&copy; 2016 Start Bootstrap. All Rights Reserved.</p>
+		
+        <p>&copy;2017 Infinite Forestry. All Rights Reserved.</p>
             <ul class="list-inline">
 				<li>
 				<a href="#">Privacy</a>
@@ -217,12 +266,13 @@
 	
 	
 	
+	<!-- START Forestry Services Modals -->
+    <!-- Use the modals below to showcase details about Infinite Forestry Services projects! -->
 	
-	
-	<!-- Portfolio Modal 1: Forest Health -->
-    <div class="services-modal modal fade" id="servicesModal1" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
+	<!-- Start Modal 1: Forest Health -->
+    <div class="services-modal modal fade" id="servicesModal1" tabindex="-1" role="dialog" aria-hidden="true"> <!-- Start services-modal -->
+        <div class="modal-dialog"> <!-- Start modal-dialog -->
+            <div class="modal-content"> <!-- Start modal-content -->
                 <div class="close-modal" data-dismiss="modal"> 
                     <div class="lr">
                         <div class="rl">
@@ -250,17 +300,166 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
+            </div> <!-- End modal-content -->
+        </div> <!-- End modal-dialog -->
+    </div> <!-- End services-modal -->
+	<!-- End Modal 1: Forest Health -->
 	
-
+	
+	<!-- Start Modal 2: Vegetation Management -->
+    <div class="services-modal modal fade" id="servicesModal2" tabindex="-1" role="dialog" aria-hidden="true"> <!-- Start services-modal -->
+        <div class="modal-dialog"> <!-- Start modal-dialog -->
+            <div class="modal-content"> <!-- Start modal-content -->
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+								<!-- Project Details Go Here -->
+                                <h2>Vegetation Management</h2>
+                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                <img class="img-responsive img-centered" src="img/services/startup-framework-preview.png" alt="">
+                                <p><a href="http://designmodo.com/startup/?u=787">Startup Framework</a> is a website builder for professionals. Startup Framework contains components and complex blocks (PSD+HTML Bootstrap themes and templates) which can easily be integrated into almost any design. All of these components are made in the same style, and can easily be integrated into projects, allowing you to create hundreds of solutions for your future projects.</p>
+                                <p>You can preview Startup Framework <a href="http://designmodo.com/startup/?u=787">here</a>.</p>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- End modal-content -->
+        </div> <!-- End modal-dialog -->
+    </div> <!-- End services-modal -->
+	<!-- End Modal 2: Vegetation Management -->
 	
 	
-    
+	<!-- Start Modal 3: Wildlife Prevention -->
+    <div class="services-modal modal fade" id="servicesModal3" tabindex="-1" role="dialog" aria-hidden="true"> <!-- Start services-modal -->
+        <div class="modal-dialog"> <!-- Start modal-dialog -->
+            <div class="modal-content"> <!-- Start modal-content -->
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>Wildlife Prevention</h2>
+                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                <img class="img-responsive img-centered" src="img/services/treehouse-preview.png" alt="">
+                                <p>Treehouse is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. This is bright and spacious design perfect for people or startup companies looking to showcase their apps or other projects.</p>
+                                <p>You can download the PSD template in this services sample item at <a href="http://freebiesxpress.com/gallery/treehouse-free-psd-web-template/">FreebiesXpress.com</a>.</p>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- End modal-content -->
+        </div> <!-- End modal-dialog -->
+    </div> <!-- End services-modal -->
+	<!-- End Modal 3: Wildlife Prevention -->
 
+	
+	<!-- Start Modal 4: Forest Products -->
+    <div class="services-modal modal fade" id="servicesModal4" tabindex="-1" role="dialog" aria-hidden="true"> <!-- Start services-modal -->
+        <div class="modal-dialog"> <!-- Start modal-dialog -->
+            <div class="modal-content"> <!-- Start modal-content -->
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>Forest Products</h2>
+                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                <img class="img-responsive img-centered" src="img/services/golden-preview.png" alt="">
+                                <p>Start Bootstrap's Agency theme is based on Golden, a free PSD website template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Golden is a modern and clean one page web template that was made exclusively for Best PSD Freebies. This template has a great services, timeline, and meet your team sections that can be easily modified to fit your needs.</p>
+                                <p>You can download the PSD template in this services sample item at <a href="http://freebiesxpress.com/gallery/golden-free-one-page-web-template/">FreebiesXpress.com</a>.</p>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- End modal-content -->
+        </div> <!-- End modal-dialog -->
+    </div> <!-- End services-modal -->
+	<!-- End Modal 4: Forest Products -->
+	
+	
+	<!-- Start Modal 5: Firewood -->
+    <div class="services-modal modal fade" id="servicesModal5" tabindex="-1" role="dialog" aria-hidden="true"> <!-- Start services-modal -->
+        <div class="modal-dialog"> <!-- Start modal-dialog -->
+            <div class="modal-content"> <!-- Start modal-content -->
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>Firewood</h2>
+                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                <img class="img-responsive img-centered" src="img/services/escape-preview.png" alt="">
+                                <p>Escape is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Escape is a one page web template that was designed with agencies in mind. This template is ideal for those looking for a simple one page solution to describe your business and offer your services.</p>
+                                <p>You can download the PSD template in this services sample item at <a href="http://freebiesxpress.com/gallery/escape-one-page-psd-web-template/">FreebiesXpress.com</a>.</p>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- End modal-content -->
+        </div> <!-- End modal-dialog -->
+    </div> <!-- End services-modal -->
+	<!-- End Modal 5: Firewood -->
+	
+	
+	<!-- Start Modal 6: Forest Residue Management -->
+    <div class="services-modal modal fade" id="servicesModal6" tabindex="-1" role="dialog" aria-hidden="true"> <!-- Start services-modal -->
+        <div class="modal-dialog">  <!-- Start modal-dialog -->
+            <div class="modal-content"> <!-- Start modal-content -->
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <h2>Forest Residue Management</h2>
+                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                <img class="img-responsive img-centered" src="img/services/startup-framework-preview.png" alt="">
+                                <p><a href="http://designmodo.com/startup/?u=787">Startup Framework</a> is a website builder for professionals. Startup Framework contains components and complex blocks (PSD+HTML Bootstrap themes and templates) which can easily be integrated into almost any design. All of these components are made in the same style, and can easily be integrated into projects, allowing you to create hundreds of solutions for your future projects.</p>
+                                <p>You can preview Startup Framework <a href="http://designmodo.com/startup/?u=787">here</a>.</p>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- End modal-content -->
+        </div> <!-- End modal-dialog -->
+    </div> <!-- End services-modal -->
+    <!-- End Modal 6: Forest Residue Management -->
 
-
+	<!-- END Forestry Services Modals -->
 
 
     <!-- jQuery -->
